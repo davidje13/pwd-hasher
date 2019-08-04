@@ -1,0 +1,51 @@
+{
+  "name": "pwd-hasher",
+  "version": "1.0.0",
+  "description": "simple password hashing with support for salt, secret pepper, and brute-force salt",
+  "files": [
+    "build/**/*"
+  ],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "webpack --mode production && tsc -p tsconfig-decl.json",
+    "lint": "eslint --format codeframe --ext mjs,jsx,js,tsx,ts --report-unused-disable-directives src && tsc",
+    "test": "jest && npm run lint",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidje13/pwd-hasher.git"
+  },
+  "keywords": [
+    "password",
+    "bcrypt",
+    "salt",
+    "pepper"
+  ],
+  "author": "David Evans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidje13/pwd-hasher/issues"
+  },
+  "homepage": "https://github.com/davidje13/pwd-hasher#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
+    "@neutrinojs/airbnb-base": "^9.0.0-rc.3",
+    "@neutrinojs/jest": "^9.0.0-rc.3",
+    "@neutrinojs/library": "^9.0.0-rc.3",
+    "@types/bcrypt": "^3.0.0",
+    "@types/jest": "^24.0.16",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "neutrino": "^9.0.0-rc.3",
+    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript#semver:^1.0.2",
+    "neutrino-typescript-eslint": "git+https://github.com/davidje13/neutrino-typescript-eslint#semver:^1.0.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}

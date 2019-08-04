@@ -1,0 +1,8 @@
+.DS_Store
+
+.idea/
+xcuserdata/
+
+.eslintcache
+
+node_modules/
