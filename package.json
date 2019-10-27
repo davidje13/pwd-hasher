@@ -8,7 +8,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "webpack --mode production && tsc -p tsconfig-decl.json",
+    "build": "webpack --mode production",
     "lint": "eslint --format codeframe --ext mjs,jsx,js,tsx,ts --report-unused-disable-directives src && tsc",
     "test": "jest && npm run lint",
     "test:watch": "jest --watch"
@@ -42,7 +42,7 @@
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
     "neutrino": "^9.0.0-rc.4",
-    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript#semver:^1.0.3",
+    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript#semver:^1.0.6",
     "neutrino-typescript-eslint": "git+https://github.com/davidje13/neutrino-typescript-eslint#semver:^1.0.1",
     "typescript": "^3.6.3",
     "webpack": "^4.41.0",

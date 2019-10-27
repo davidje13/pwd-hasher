@@ -10,7 +10,7 @@ module.exports = {
     tests: 'src',
   },
   use: [
-    typescript(),
+    typescript({ declaration: true }),
     typescriptLint(),
     airbnbBase({
       eslint: {
