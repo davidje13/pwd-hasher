@@ -5,7 +5,7 @@ Simple password hashing with support for salt, secret pepper, and brute-force sa
 ## Install dependency
 
 ```bash
-npm install --save git+https://github.com/davidje13/pwd-hasher.git#semver:^1.0.0
+npm install --save git+https://github.com/davidje13/pwd-hasher.git#semver:^1.0.1
 ```
 
 ## Usage
