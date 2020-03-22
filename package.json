@@ -30,22 +30,22 @@
   },
   "homepage": "https://github.com/davidje13/pwd-hasher#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6"
+    "bcrypt": "4.x"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.6.2",
-    "@neutrinojs/airbnb-base": "^9.0.0-rc.4",
-    "@neutrinojs/jest": "^9.0.0-rc.4",
-    "@neutrinojs/library": "^9.0.0-rc.4",
-    "@types/bcrypt": "^3.0.0",
-    "@types/jest": "^24.0.18",
-    "eslint": "^6.5.1",
-    "jest": "^24.9.0",
-    "neutrino": "^9.0.0-rc.4",
-    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript#semver:^1.0.6",
-    "neutrino-typescript-eslint": "git+https://github.com/davidje13/neutrino-typescript-eslint#semver:^1.0.1",
-    "typescript": "^3.6.3",
-    "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9"
+    "@babel/preset-env": "7.x",
+    "@neutrinojs/airbnb-base": "9.x",
+    "@neutrinojs/jest": "9.x",
+    "@neutrinojs/library": "9.x",
+    "@types/bcrypt": "3.x || 4.x",
+    "@types/jest": "25.x",
+    "eslint": "6.x",
+    "jest": "25.x",
+    "neutrino": "9.x",
+    "neutrino-typescript": "git+https://github.com/davidje13/neutrino-typescript#semver:^1.0.10",
+    "neutrino-typescript-eslint": "git+https://github.com/davidje13/neutrino-typescript-eslint#semver:^1.0.5",
+    "typescript": "3.8.x",
+    "webpack": "4.x",
+    "webpack-cli": "3.x"
   }
 }

@@ -44,6 +44,7 @@ module.exports = {
           '@typescript-eslint/no-parameter-properties': ['error', {
             'allows': ['private readonly', 'protected readonly'],
           }],
+          'import/extensions': ['error', 'never'],
           'babel/semi': ['off'],
           '@typescript-eslint/semi': ['error'],
         },
