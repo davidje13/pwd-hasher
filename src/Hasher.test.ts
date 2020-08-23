@@ -61,6 +61,13 @@ describe('Hasher', () => {
 
       expect(await hasher2.compare('abc', hash)).toEqual(false);
     });
+
+    it('uses an unchanging hash format across versions', async () => {
+      const hasher2 = new Hasher({ secretPepper: 'pepper1', workFactor: 4 });
+      const hash = '$2b$04$8zwdVI7Thf4w5dOqNLfnBO0ZET7DKCOgpQML0rfTuKwOVY6XMSN0u';
+
+      expect(await hasher2.compare('abc', hash)).toEqual(true);
+    });
   });
 
   describe('needsRegenerate', () => {
