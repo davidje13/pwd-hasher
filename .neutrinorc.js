@@ -1,8 +1,8 @@
 const airbnbBase = require('@neutrinojs/airbnb-base');
 const library = require('@neutrinojs/library');
 const jest = require('@neutrinojs/jest');
-const typescript = require('neutrino-typescript');
-const typescriptLint = require('neutrino-typescript-eslint');
+const typescript = require('neutrinojs-typescript');
+const typescriptLint = require('neutrinojs-typescript-eslint');
 
 module.exports = {
   options: {
