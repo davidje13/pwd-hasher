@@ -8,8 +8,10 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
+    "prebuild": "rewrite-tsconfig",
     "build": "webpack --mode production",
-    "lint": "eslint --format codeframe --ext mjs,jsx,js,tsx,ts --report-unused-disable-directives src && tsc",
+    "prelint": "rewrite-tsconfig",
+    "lint": "eslint --format codeframe --report-unused-disable-directives src && tsc",
     "test": "jest",
     "posttest": "npm run lint",
     "test:watch": "jest --watch"
