@@ -34,7 +34,7 @@ module.exports = {
           '@typescript-eslint/prefer-includes': ['error'],
           '@typescript-eslint/prefer-regexp-exec': ['error'],
           '@typescript-eslint/prefer-string-starts-ends-with': ['error'],
-          '@typescript-eslint/require-array-sort-compare': ['error'],
+          '@typescript-eslint/require-array-sort-compare': ['error', { ignoreStringArrays: true }],
           '@typescript-eslint/restrict-plus-operands': ['error'],
           '@typescript-eslint/unbound-method': ['error'],
           '@typescript-eslint/explicit-function-return-type': ['error', {

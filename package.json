@@ -40,14 +40,14 @@
     "@neutrinojs/airbnb-base": "9.x",
     "@neutrinojs/jest": "9.x",
     "@neutrinojs/library": "9.x",
-    "@types/bcrypt": "3.x || 4.x || 5.x",
+    "@types/bcrypt": "5.x",
     "@types/jest": "26.x",
     "eslint": "7.x",
     "jest": "26.x",
     "neutrino": "9.x",
     "neutrinojs-typescript": "1.x",
     "neutrinojs-typescript-eslint": "1.x",
-    "typescript": "4.0.x",
+    "typescript": "4.4.x",
     "webpack": "4.x",
     "webpack-cli": "3.x"
   }
