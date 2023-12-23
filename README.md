@@ -11,7 +11,7 @@ npm install --save pwd-hasher
 ## Usage
 
 ```javascript
-import Hasher from 'pwd-hasher';
+import { Hasher } from 'pwd-hasher';
 
 const hasher = new Hasher({ secretPepper: 'shhh', workFactor: 10 });
 
@@ -26,7 +26,7 @@ const valid = await hasher.compare('my-password', hashed); // true
 #### Constructor
 
 ```javascript
-const hasher = new Hasher({ secretPepper, workFactor })
+const hasher = new Hasher({ secretPepper, workFactor });
 ```
 
 Creates a new `Hasher` object.

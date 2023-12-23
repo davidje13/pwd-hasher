@@ -1,7 +1,5 @@
-'use strict';
-
-var node_crypto = require('node:crypto');
-var bcrypt = require('bcryptjs');
+import { webcrypto } from 'node:crypto';
+import bcrypt from 'bcryptjs';
 
 // adds random brute-force salt to bcrypt algorithm
 // (results in average ~1.8x work for incorrect passwords)
@@ -10,7 +8,7 @@ const BRUTE_SALTS = '01234567'.split('');
 
 function pickBruteSalt() {
   const buf = new Uint8Array(1);
-  node_crypto.webcrypto.getRandomValues(buf);
+  webcrypto.getRandomValues(buf);
   return BRUTE_SALTS[buf[0] % BRUTE_SALTS.length];
 }
 
@@ -33,7 +31,7 @@ function shuffle(list) {
 async function preprocess(password, secretPepper, bruteSalt) {
   // use SHA to ensure no max length
   // (which would make it possible to brute-force the secretPepper)
-  const buf = await node_crypto.webcrypto.subtle.digest(
+  const buf = await webcrypto.subtle.digest(
     'SHA-512',
     Buffer.from(`${password}${bruteSalt}${secretPepper}`, 'utf8'),
   );
@@ -72,4 +70,4 @@ class Hasher {
   }
 }
 
-exports.Hasher = Hasher;
+export { Hasher };
