@@ -1,3 +1,5 @@
+import terser from '@rollup/plugin-terser';
+
 export default [
   {
     input: 'src/index.mjs',
@@ -6,5 +8,6 @@ export default [
       { file: 'build/index.js', format: 'cjs' },
     ],
     external: ['node:crypto', 'bcryptjs'],
+    plugins: [terser({ format: { ascii_only: true } })],
   },
 ];
