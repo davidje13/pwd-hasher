@@ -1,6 +1,6 @@
 {
   "name": "pwd-hasher",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "simple password hashing with support for salt, secret pepper, and brute-force salt",
   "files": [
     "build/**/*",
